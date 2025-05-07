@@ -12,7 +12,6 @@
 - **Part A**: Developed 3D textured mesh models from 15 original Apollo 17 photographs.
 - Applied **Gaussian Splatting** to recover original views.
 - Evaluated fidelity using **SSIM** and **PSNR**.
-  
 - **Part B**: Generated 10 novel views using Gaussian Splatting and added to photogrammetry dataset.
 - Reprocessed augmented dataset to evaluate improvements.
 - **Result**: Quantitative and qualitative analysis confirmed the effectiveness of Gaussian Splatting in enhancing photogrammetric reconstructions.
@@ -58,7 +57,7 @@ Photogrammetry enables the reconstruction of three-dimensional models from two-d
 - **Gaussian Splatting Views**: Closely matched original images.
 
 
-**Interpretation**
+**Interpretations:**
 
 The results from Part A demonstrate that the photogrammetric model reconstructed using the original 15 Apollo 17 images achieved a reasonable level of structural and visual fidelity. The average SSIM value of 0.6503 suggests a moderate to high degree of perceptual similarity between the original images and the reconstructed views, indicating that the overall structure of the lunar surface was preserved effectively during the modeling process. The PSNR value of 22.41 dB reflects acceptable pixel-level consistency, although minor discrepancies were expected due to variations in image alignment, lighting conditions, and texture mapping.
 
@@ -116,7 +115,9 @@ These images show the 3D mesh and camera alignments for Part A photogrammetry us
 
 These images illustrate the augmented photogrammetric model developed in Part B, which includes the original 15 Apollo 17 images plus 10 novel views generated using Gaussian Splatting. The model shows improved surface coverage, fewer gaps, and enhanced texture mapping compared to the Part A results.
 ![WhatsApp Image 2025-05-07 at 2 26 45 PM (1)](https://github.com/user-attachments/assets/dfa827b2-8dad-4eb3-a349-7057d78f29f4)
-![WhatsApp Image 2025-05-07 at 2 26 45 PM](https://github.com/user-attachments/assets/3ce72593-0c24-472e-9684-719e4029b412)
+![Part b](https://github.com/user-attachments/assets/80fb86b3-612f-49e6-aad9-b384def24725)
+
+
 
 
 
