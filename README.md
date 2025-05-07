@@ -21,9 +21,7 @@
 
 ### Introduction
 
-- **Photogrammetry**: Reconstructs 3D models from 2D images.
-- Apollo 17 images offer high-resolution data for 3D modeling.
-- **Gaussian Splatting**: Renders novel views and enhances scene understanding.
+Photogrammetry enables the reconstruction of three-dimensional models from two-dimensional images, providing valuable tools for planetary science. The Apollo 17 mission produced high-resolution photographs suitable for 3D modeling. Recent advances, such as Gaussian Splatting, allow for the rendering of novel views and improved scene understanding. This section focuses on creating a 3D model from original imagery and evaluating view recovery quality.
 
 ### Methodology
 
@@ -56,6 +54,13 @@
 - **PSNR**: 19.33 dB to 25.45 dB (**average 22.41 dB**).
 - **Textured Mesh**: Accurate geometry & realistic textures.
 - **Gaussian Splatting Views**: Closely matched original images.
+
+
+**Interpretation**
+
+The results from Part A demonstrate that the photogrammetric model reconstructed using the original 15 Apollo 17 images achieved a reasonable level of structural and visual fidelity. The average SSIM value of 0.6503 suggests a moderate to high degree of perceptual similarity between the original images and the reconstructed views, indicating that the overall structure of the lunar surface was preserved effectively during the modeling process. The PSNR value of 22.41 dB reflects acceptable pixel-level consistency, although minor discrepancies were expected due to variations in image alignment, lighting conditions, and texture mapping.
+
+Visually, the textured mesh produced in Metashape displayed accurate geometric features and realistic textures, confirming the quality of the dense point cloud and mesh reconstruction processes. However, some areas of the model exhibited gaps or reduced detail, primarily in regions with limited image coverage or insufficient overlap between viewpoints. These limitations highlight the challenges of reconstructing complete and highly detailed 3D models from a limited set of images and provided the motivation for generating additional views using Gaussian Splatting in Part B.
 
 ---
 
@@ -103,7 +108,15 @@ These images show the 3D mesh and camera alignments for Part A photogrammetry us
 ![Screenshot 2025-05-07 132013](https://github.com/user-attachments/assets/4a2c31aa-90b7-4f93-a68c-ca171cc2ac1e)
 ![Screenshot 2025-05-07 131959](https://github.com/user-attachments/assets/789e852d-3928-43f8-9e64-40a4f05e947f)
 ![Screenshot 2025-05-07 124813](https://github.com/user-attachments/assets/12259af2-d213-447e-8a6b-1eb96b2ff15f)
-![Screenshot 2025-05-07 151231](https://github.com/user-attachments/assets/677fc4a5-7226-470e-8c45-f66c9654ce75)
+![Screenshot 2025-05-07 151231](https://github.com/user-attachments/assets/7cc50f5e-5a9f-4eea-b55a-889731ddc129)
+
+
+
+These images illustrate the augmented photogrammetric model developed in Part B, which includes the original 15 Apollo 17 images plus 10 novel views generated using Gaussian Splatting. The model shows improved surface coverage, fewer gaps, and enhanced texture mapping compared to the Part A results.
+![WhatsApp Image 2025-05-07 at 2 26 45 PM (1)](https://github.com/user-attachments/assets/dfa827b2-8dad-4eb3-a349-7057d78f29f4)
+![WhatsApp Image 2025-05-07 at 2 26 45 PM](https://github.com/user-attachments/assets/3ce72593-0c24-472e-9684-719e4029b412)
+
+
 
 
 
