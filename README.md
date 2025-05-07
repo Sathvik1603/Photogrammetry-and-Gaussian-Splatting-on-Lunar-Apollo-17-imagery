@@ -12,6 +12,7 @@
 - **Part A**: Developed 3D textured mesh models from 15 original Apollo 17 photographs.
 - Applied **Gaussian Splatting** to recover original views.
 - Evaluated fidelity using **SSIM** and **PSNR**.
+  
 - **Part B**: Generated 10 novel views using Gaussian Splatting and added to photogrammetry dataset.
 - Reprocessed augmented dataset to evaluate improvements.
 - **Result**: Quantitative and qualitative analysis confirmed the effectiveness of Gaussian Splatting in enhancing photogrammetric reconstructions.
